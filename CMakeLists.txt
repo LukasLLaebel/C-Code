@@ -7,6 +7,15 @@ set(CMAKE_C_STANDARD 11)
 file(GLOB SRC_FILES "*.c" */*.c)
 
 add_executable(MyCProjects ${SRC_FILES})
+
+
+#add_executable(MyCProjects
+#        printingPatterns.c
+#        stensakspapir.c
+#        Aflevering1.c
+#        Aflevering2.c)
+
+
 # Force console subsystem on Windows
 if (WIN32)
     target_link_options(MyCProjects PRIVATE -mconsole)

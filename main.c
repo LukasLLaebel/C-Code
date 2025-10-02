@@ -2,7 +2,7 @@
 #include "stensakspapir.h"
 #include "printingPatterns.h"
 #include "Aflevering2.h"
-
+#include "Aflevering1.h"
 
 int main(void) {
     //printingPatterns.c
@@ -18,8 +18,11 @@ int main(void) {
     // StenSaksPapir.c
     //stensakspapir_game();
 
+    // Aflevering 1
+    aflevering1();
+
     // Aflevering 2
-    aflevering2();
+    //aflevering2();
 
 
     return 0;
