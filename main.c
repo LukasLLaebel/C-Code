@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include "stensakspapir.h"
 #include "printingPatterns.h"
-
+#include "Aflevering2.h"
 
 
 int main(void) {
     //printingPatterns.c
-    int n = 10;
-    int m = 10;
+    //int n = 10;
+    //int m = 10;
     //halfPyramid(n);
     //reverseHalfPyramid(n);
     //pyramid(n);
@@ -16,7 +16,12 @@ int main(void) {
 
 
     // StenSaksPapir.c
-    stensakspapir_game();
+    //stensakspapir_game();
+
+    // Aflevering 2
+    aflevering2();
+
+
     return 0;
 }
 

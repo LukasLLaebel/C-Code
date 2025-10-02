@@ -4,7 +4,7 @@ project(MyCProjects C)
 set(CMAKE_C_STANDARD 11)
 
 # Automatically include all C files in the folder
-file(GLOB SRC_FILES "*.c")
+file(GLOB SRC_FILES "*.c" */*.c)
 
 add_executable(MyCProjects ${SRC_FILES})
 # Force console subsystem on Windows
