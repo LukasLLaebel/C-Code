@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include "Aflevering1.h"
 /*
  *  A week has 7 * 24 * 60 * 60 = 604800 seconds.
  *  650 sekunder er 0 uger, 0 dage, 0 timer, 10 minutter og 50 sekunder

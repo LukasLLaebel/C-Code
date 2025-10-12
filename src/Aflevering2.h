@@ -7,7 +7,7 @@
 
 #include <stdbool.h>
 
-int aflevering2(void);
+int aflevering2(int listLength, int checkNum);
 bool containsDigit(int num, int digit);
 
 

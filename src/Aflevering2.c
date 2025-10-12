@@ -1,11 +1,8 @@
 #include <stdio.h>
 #include "Aflevering2.h"
 
- // input example : 100 5
-int aflevering2(void) {
-    // variables
-    int listLength = 100;
-    int checkNum = 5;
+// input example : 100 5
+int aflevering2(int listLength, int checkNum) {
 
     // set an counter for the number
     int count = 0;

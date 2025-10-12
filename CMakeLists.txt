@@ -3,20 +3,23 @@ project(MyCProjects C)
 
 set(CMAKE_C_STANDARD 11)
 
-# Automatically include all C files in the folder
-file(GLOB SRC_FILES "*.c" */*.c)
+# Include all .c files recursively from the src directory
+file(GLOB_RECURSE SRC_FILES
+        "${CMAKE_SOURCE_DIR}/src/*.c"
+)
 
-add_executable(MyCProjects ${SRC_FILES})
+# Add the executable (main.c + all .c files from src)
+add_executable(MyCProjects
+        main.c
+        ${SRC_FILES}
+)
 
+# Add include directories so headers in src/ can be found
+target_include_directories(MyCProjects PRIVATE
+        ${CMAKE_SOURCE_DIR}/src
+)
 
-#add_executable(MyCProjects
-#        printingPatterns.c
-#        stensakspapir.c
-#        Aflevering1.c
-#        Aflevering2.c)
-
-
-# Force console subsystem on Windows
+# Force console subsystem on Windows (optional)
 if (WIN32)
     target_link_options(MyCProjects PRIVATE -mconsole)
-endif ()
+endif()
