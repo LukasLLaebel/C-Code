@@ -87,7 +87,6 @@ int main(void) {
     //aflevering2(listLength, checkNum);
     // --------------------------------------------------------
 
-
     return 0;
 }
 
