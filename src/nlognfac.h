@@ -1,5 +1,5 @@
-#ifndef LOMMEREGNER_H
-#define LOMMEREGNER_H
+#ifndef NLOGNFAC_H
+#define NLOGNFAC_H
 
 int nlogn();
 int factorial();
