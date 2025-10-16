@@ -11,6 +11,7 @@
 #include "src/lecture3.h"
 #include "src/nlognfac.h"
 #include "src/lommeregner.h"
+#include "src/miniproject1.h"
 
 
 int main(void) {
@@ -102,8 +103,8 @@ int main(void) {
     
     // --------------------- Mini project.c --------------------
 
-    lommeregner();
-
+    //lommeregner();
+    miniproject1();
     // ---------------------------------------------------------
 
 

@@ -4,12 +4,33 @@
 #include <stdlib.h>
 #include <ctype.h>
 
+
+
+// beskrivelse af operators:
+// + for addition af akkumulatoren
+// - for subtraktion af akkumulatoren
+// * for multiplikation af akkumulatoren
+// / for division af akkumulatoren
+// ^ for potensopløftning af akkumulatoren
+//
+// # for kvadratroden
+// % for at vende fortegnet af akkumulatoren
+// ! for at dividere 1 med akkumulatoren
+// q for at afslutte regnemaskinen
+
+
+// IMPROVEMENTS
+// 1. ranking of operators "(), *, /" is before "+, -"
+// 2. be able to make real equesitons like solve for x and so on.
+// 3. be able to regonize terms like log, sin, cos, tan, and so on
+
+
 // function prototypes
 int calculation(char operator, int number_1, int number_2);
 
-
 int lommeregner(void) {
-    const char operators[4] = {'+', '-', '/', '*'};
+    const char operators[5] = {'+', '-', '/', '*','^'};
+    //const char Special_operators[3] = {'#', '%','!'};
     char input[100];
     char storedOperator = '\0';
     char numberBuff[100];
@@ -35,7 +56,7 @@ int lommeregner(void) {
                 strcpy(stored_num1, numberBuff);
                 storedOperator = input[i];
             } else {
-                strcpy(stored_num2, numberBuff);
+                strcpy(stored_num2, numberBuff); 
                 num1 = atoi(stored_num1);
                 num2 = atoi(stored_num2);
 
@@ -88,5 +109,23 @@ int calculation(char operator, int number_1, int number_2) {
 
   return result;
 }
+
+
+//unsigned int binary_divide(unsigned int dividend, unsigned int divisor) {
+//    unsigned int quotient = 0;
+//    unsigned int temp = 0;
+//
+//    for (int i = 31; i >= 0; i--) {
+//        // Shift temp left and bring in the next bit of dividend
+//        temp = (temp << 1) | ((dividend >> i) & 1);
+//
+//        if (temp >= divisor) {
+//            temp -= divisor;
+//            quotient |= (1U << i);
+//        }
+//    }
+//
+//    return quotient;
+//}
 
 
