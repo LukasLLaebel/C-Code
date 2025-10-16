@@ -14,6 +14,11 @@ add_executable(MyCProjects
         ${SRC_FILES}
 )
 
+find_library(MATH_LIBRARY m)
+if(MATH_LIBRARY)
+  target_link_libraries(MyCProjects PUBLIC ${MATH_LIBRARY})
+endif()
+
 # Add include directories so headers in src/ can be found
 target_include_directories(MyCProjects PRIVATE
         ${CMAKE_SOURCE_DIR}/src
