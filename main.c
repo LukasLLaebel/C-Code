@@ -9,6 +9,8 @@
 #include "src/lecture1.h"
 #include "src/lecture2.h"
 #include "src/lecture3.h"
+#include "src/lommeregner.h"
+
 
 int main(void) {
     //--------------------- printingPatterns.c ---------------------
@@ -20,8 +22,9 @@ int main(void) {
     //diamond(n);
     //firkant(n, m);
     // ---------------------------------------------------------------
-
-
+    
+    //nlogn();
+    //factorial();
     // --------------------- sqrt.c ---------------------
     //float number = 10;
 
