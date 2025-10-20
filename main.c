@@ -1,19 +1,19 @@
 #include <stdio.h>
 #include <math.h>
 
-#include "src/stensakspapir.h"
-#include "src/printingPatterns.h"
-#include "src/sqrt.h"
-#include "src/Aflevering2.h"
-#include "src/Aflevering1.h"
-#include "src/lecture1.h"
-#include "src/lecture2.h"
-#include "src/lecture3.h"
-#include "src/nlognfac.h"
-#include "src/lommeregner.h"
-#include "src/miniproject1.h"
-#include "src/cashier.h"
-
+#include "lib/stensakspapir.h"
+#include "lib/printingPatterns.h"
+#include "lib/sqrt.h"
+#include "lib/Aflevering2.h"
+#include "lib/Aflevering1.h"
+#include "lib/lecture1.h"
+#include "lib/lecture2.h"
+#include "lib/lecture3.h"
+#include "lib/nlognfac.h"
+#include "lib/lommeregner.h"
+#include "lib/miniproject1.h"
+#include "lib/cashier.h"
+#include "lib/lecture7.h"
 
 int main(void) {
     //--------------------- printingPatterns.c ---------------------
@@ -85,7 +85,9 @@ int main(void) {
     // ------------------------------------------------------
 
     // --------------------- lecture7 -----------------------
-    cashier();
+    //cashier();
+    
+    exercise9_2();
     // -------------------------------------------------------
 
 

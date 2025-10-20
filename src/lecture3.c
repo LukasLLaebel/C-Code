@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-#include "lecture3.h"
+#include "../lib/lecture3.h"
 
 int exercise3_1(void) {
     // define variables

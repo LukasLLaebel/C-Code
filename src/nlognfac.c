@@ -1,5 +1,5 @@
 
-#include "nlognfac.h"
+#include "../lib/nlognfac.h"
 #include <stdio.h>
 #include <math.h>
 

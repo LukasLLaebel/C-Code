@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "cashier.h"
+#include "../lib/cashier.h"
 
 #define NUMBER_OF_GOODS 10
 

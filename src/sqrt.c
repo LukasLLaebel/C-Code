@@ -1,6 +1,6 @@
 #include <math.h>
 #include <stdbool.h>
-#include "sqrt.h"
+#include "../lib/sqrt.h"
 
 // inverse of a sqrt
 int inverseSQRT(float number) {

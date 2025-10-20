@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "printingPatterns.h"
+#include "../lib/printingPatterns.h"
 
 
 void diamond(int n) {

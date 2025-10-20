@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "lecture1.h"
+#include "../lib/lecture1.h"
 
 int exercise1_1(void) {
     double radius;

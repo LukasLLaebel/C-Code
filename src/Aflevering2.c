@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "Aflevering2.h"
+#include "../lib/Aflevering2.h"
 
 // input example : 100 5
 int aflevering2(int listLength, int checkNum) {
