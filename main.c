@@ -12,6 +12,7 @@
 #include "src/nlognfac.h"
 #include "src/lommeregner.h"
 #include "src/miniproject1.h"
+#include "src/cashier.h"
 
 
 int main(void) {
@@ -83,6 +84,10 @@ int main(void) {
 
     // ------------------------------------------------------
 
+    // --------------------- lecture7 -----------------------
+    cashier();
+    // -------------------------------------------------------
+
 
     // --------------------- StenSaksPapir.c ---------------------
     //stensakspapir_game();
@@ -104,7 +109,7 @@ int main(void) {
     // --------------------- Mini project.c --------------------
 
     //lommeregner();
-    miniproject1();
+    //miniproject1();
     // ---------------------------------------------------------
 
 
