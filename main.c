@@ -14,6 +14,7 @@
 #include "lib/miniproject1.h"
 #include "lib/cashier.h"
 #include "lib/lecture7.h"
+#include "project1.h"
 
 int main(void) {
     //--------------------- printingPatterns.c ---------------------
@@ -88,7 +89,7 @@ int main(void) {
     //cashier();
     
     //exercise9_2();
-    exercise9_3();
+    //exercise9_3();
     // -------------------------------------------------------
 
 
@@ -112,7 +113,8 @@ int main(void) {
     // --------------------- Mini project.c --------------------
 
     //lommeregner();
-    //miniproject1();
+    miniproject1();
+    //Main();
     // ---------------------------------------------------------
 
 
