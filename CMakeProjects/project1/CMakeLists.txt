@@ -12,7 +12,7 @@ file(GLOB_RECURSE PROJECT1_SRC CONFIGURE_DEPENDS
 # Create a static library
 add_library(project1_lib STATIC ${PROJECT1_SRC})
 
-# Add lib/ so project1.h and test.h can be found by other targets
+# Add lib/ so project1.h can be found by other targets
 target_include_directories(project1_lib PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/lib
 )
