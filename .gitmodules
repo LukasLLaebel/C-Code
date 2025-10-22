@@ -1,0 +1,3 @@
+[submodule "CMakeProjects/project1/extern/mtest"]
+	path = CMakeProjects/project1/extern/mtest
+	url = https://github.com/MortenSchou/mtest.git
