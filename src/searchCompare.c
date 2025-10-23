@@ -95,9 +95,25 @@ int LinSearch(int array[], int x){
 }
 
 int BinSearch(int array[], int x){
-  int i=0;
+  int i = 0;
+  int j = N - 1;
+  int m = 0;
+  
   /* Fill in your code HERE */
+  while (i < j) {
+    m = floor((i + j) / 2);
+    
+    if (x > array[m]) {
+      i = m + 1;
 
-  return i;
+    } else {
+      j = m;
+    }
+  }
+  if (x == array[i]) {
+    return i;
+  } else {
+    return -1;
+  }
 }
 
