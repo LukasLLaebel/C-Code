@@ -18,11 +18,11 @@ void do_next_op(char operator, double operand, double* accumulator) {
         *accumulator *= operand;
         break;
       case '/':
-        // Because you cannot divide by 0 checks for 0
+        // Because you cannot divide by 0, checks for 0
         if (operand != 0)
           *accumulator /= operand;
         else
-          printf("Error: Division by zero.\n");
+          *accumulator = *accumulator;
         break;
       // First special one is ^ it takes the accumulator and gives it an exponent of the operand
       case '^':
@@ -30,7 +30,11 @@ void do_next_op(char operator, double operand, double* accumulator) {
         break;
       // # puts the accumulator into an squre root it does that using the sqrt() from math.h
       case '#':
-        *accumulator = sqrt(*accumulator);
+        if (*accumulator < 0) {
+          *accumulator = *accumulator;
+        } else {
+          *accumulator = sqrt(*accumulator);
+        }
         break;      
       // the % takes the accumulator and turns it to its reverse. this is done by multipying by -1
       case '%':
@@ -38,8 +42,13 @@ void do_next_op(char operator, double operand, double* accumulator) {
         break;
       // the ! is tricky, it says to divide by 1. that part is easy. but to prevent conflict we put the accumulator into ()
       // I do not know if there would be any conflicts so just to be sure i did that also so its easy to realize its an pointer not /* or to operators
+      // we divide so like same rules
       case '!':
-        *accumulator = 1/(*accumulator); 
+        if (*accumulator == 0) {
+          *accumulator = *accumulator;  
+        } else {
+          *accumulator = 1/(*accumulator); 
+        }
         break; 
       // at last we just do a default so the user knows they did something wrong if they did not put in the right operator
       default:

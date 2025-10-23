@@ -8,11 +8,13 @@ add_subdirectory(CMakeProjects/project1)
 
 # Find all top-level src files
 file(GLOB_RECURSE SRC_FILES "${CMAKE_SOURCE_DIR}/src/*.c")
+file(GLOB_RECURSE LISTS_FILES "${CMAKE_SOURCE_DIR}/src/*.txt")
 
 # Add the top-level executable
 add_executable(MyCProjects
     main.c
     ${SRC_FILES}
+    ${LISTS_FILES}
 )
 
 # Link with the project1 library

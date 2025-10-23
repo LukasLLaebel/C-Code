@@ -15,6 +15,7 @@
 #include "lib/cashier.h"
 #include "lib/lecture7.h"
 #include "project1.h"
+#include "lib/searchCompare.h"
 
 int main(void) {
     //--------------------- printingPatterns.c ---------------------
@@ -28,10 +29,10 @@ int main(void) {
     // ---------------------------------------------------------------
 
   
-    
+    // DTG
 
 
-
+    searchCompare();
     //nlogn();
     //factorial();
   
