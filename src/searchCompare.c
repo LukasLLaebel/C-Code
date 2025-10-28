@@ -4,7 +4,7 @@
 #include <time.h>
 
 /* Change this to 500, 1000, 2000, 6000, or 9000 for the different lists*/
-#define N 500
+#define N 6000
 
 int LinSearch(int array[], int x);
 int BinSearch(int array[], int x);

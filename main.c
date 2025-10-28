@@ -16,6 +16,8 @@
 #include "lib/lecture7.h"
 #include "project1.h"
 #include "lib/searchCompare.h"
+#include "lib/Aflevering3.h"
+
 
 int main(void) {
     //--------------------- printingPatterns.c ---------------------
@@ -32,7 +34,7 @@ int main(void) {
     // DTG
 
 
-    searchCompare();
+    //searchCompare();
     //nlogn();
     //factorial();
   
@@ -111,7 +113,7 @@ int main(void) {
     // --------------------------------------------------------
     
     // ---------------------- Aflevering3 ----------------------
-    
+    Aflevering3(); 
 
     // ---------------------------------------------------------
 

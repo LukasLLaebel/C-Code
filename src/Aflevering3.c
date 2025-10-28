@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include "../lib/aflevering3-funcs.h"
+#include "../lib/Aflevering3.h"
 
 /* Eksempler på funktioner, som kan kaldes på et enkelt element af typen double */
 void print(double x) { printf("%.2lf, ", x); }
@@ -20,25 +22,23 @@ int Aflevering3(void) {
     /*
      * Det følgende kode kan du bruge til at afprøve din implementering af `map`, `all` og `any`.
      */
-    /*
     if (all(positive, arr, size)) printf("All numbers are positive.\n");
     else if (any(positive, arr, size)) printf("There is a positive number.\n");
     if (any(is_zero, arr, size)) printf("There is a zero.\n");
-
     printf("\nIncrementing each number:\n");
+    
     map(add_one, arr, size);
     print_array(arr, size);
     if (all(positive, arr, size)) printf("All numbers are positive.\n");
     else if (any(positive, arr, size)) printf("There is a positive number.\n");
     if (any(is_zero, arr, size)) printf("There is a zero.\n");
-
     printf("\nSquaring each number:\n");
+    
     map(square, arr, size);
     print_array(arr, size);
     if (all(positive, arr, size)) printf("All numbers are positive.\n");
     else if (any(positive, arr, size)) printf("There is a positive number.\n");
     if (any(is_zero, arr, size)) printf("There is a zero.\n");
-    */
 
     return 0;
 }
