@@ -5,7 +5,7 @@ set(CMAKE_C_STANDARD 11)
 
 # Add subproject as a library
 add_subdirectory(CMakeProjects/project1)
-
+add_subdirectory(CMakeProjects/miniproject2)
 # Find all top-level src files
 file(GLOB_RECURSE SRC_FILES "${CMAKE_SOURCE_DIR}/src/*.c")
 file(GLOB_RECURSE LISTS_FILES "${CMAKE_SOURCE_DIR}/src/*.txt")
@@ -19,10 +19,12 @@ add_executable(MyCProjects
 
 # Link with the project1 library
 target_link_libraries(MyCProjects PRIVATE project1_lib)
+target_link_libraries(MyCProjects PRIVATE Miniproject2_lib)
 
 # Add include directory for subproject headers
 target_include_directories(MyCProjects PRIVATE
     ${CMAKE_SOURCE_DIR}/CMakeProjects/project1/lib
+    ${CMAKE_SOURCE_DIR}/CMakeProjects/miniproject2/lib
 )
 
 # Optional: Link math if needed
