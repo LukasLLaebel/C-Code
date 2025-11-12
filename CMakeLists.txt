@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 4.0)
 project(MyCProjects C)
 
 set(CMAKE_C_STANDARD 11)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 # Add subproject as a library
 add_subdirectory(CMakeProjects/project1)
