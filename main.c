@@ -6,6 +6,7 @@
 #include "lib/Aflevering3.h"
 #include "lib/cashier.h"
 #include "lib/lecture1.h"
+#include "lib/lecture12.h"
 #include "lib/lecture2.h"
 #include "lib/lecture3.h"
 #include "lib/lecture7.h"
@@ -21,7 +22,7 @@
 #include "miniproject2.h"
 #include "project1.h"
 
-int main(void) {
+int main(int argc, char *argv[]) {
   //--------------------- printingPatterns.c ---------------------
   // int n = 10;
   // int m = 10;
@@ -97,6 +98,11 @@ int main(void) {
   // exercise10_4();
   // -------------------------------------------------------
 
+  // ---------------------- lecture12 -----------------------
+  // exercise13_1();
+  exercise13_2(argc, argv);
+  // -------------------------------------------------------
+
   // --------------------- StenSaksPapir.c ---------------------
   // stensakspapir_game();
   // -----------------------------------------------------------
@@ -125,8 +131,8 @@ int main(void) {
 
   // --------------------- Mini project1.c --------------------
 
-  miniproject2();
-  // ---------------------------------------------------------
+  // miniproject2();
+  //  ---------------------------------------------------------
 
   return 0;
 }
