@@ -1,4 +1,4 @@
-#include <stdbool.h>
+/*#include <stdbool.h>
 #include <stdint.h>
 #include <stdio.h>
 #include <string.h>
@@ -167,6 +167,6 @@ int EC_hashtableExample() {
     printf("Kate => %u\n", hashing("Kate"));
     printf("Tobias => %u\n", hashing("Tobias"));
     printf("Henrik => %u\n", hashing("Henrik"));
-  */
+
   return 0;
-}
+}*/

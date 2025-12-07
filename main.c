@@ -4,7 +4,7 @@
 #include "lib/Aflevering1.h"
 #include "lib/Aflevering2.h"
 #include "lib/Aflevering3.h"
-#include "lib/EC_hashtables.h"
+// #include "lib/EC_hashtables.h"
 #include "lib/cashier.h"
 // #include "lib/hashtable.h"
 #include "lib/lecture1.h"
@@ -22,6 +22,7 @@
 #include "lib/sqrt.h"
 #include "lib/stensakspapir.h"
 #include "miniproject2.h"
+#include "miniproject3.h"
 #include "project1.h"
 int main(/*int argc, char *argv[]*/) {
   //--------------------- printingPatterns.c ---------------------
@@ -47,7 +48,7 @@ int main(/*int argc, char *argv[]*/) {
   //
   //
   // hashtableExample();
-  EC_hashtableExample();
+  // EC_hashtableExample();
   //
   // -----------------------------------------------------------------------
 
@@ -138,9 +139,14 @@ int main(/*int argc, char *argv[]*/) {
   // Main();
   //  ---------------------------------------------------------
 
-  // --------------------- Mini project1.c --------------------
+  // --------------------- Mini project2.c --------------------
 
   // miniproject2();
+  //  ---------------------------------------------------------
+
+  // --------------------- Mini project3.c --------------------
+
+  miniproject3();
   //  ---------------------------------------------------------
 
   return 0;
