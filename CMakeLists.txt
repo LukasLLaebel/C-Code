@@ -13,11 +13,14 @@ add_subdirectory(CMakeProjects/miniproject3)
 file(GLOB_RECURSE SRC_FILES "${CMAKE_SOURCE_DIR}/src/*.c")
 file(GLOB_RECURSE LISTS_FILES "${CMAKE_SOURCE_DIR}/src/*.txt")
 
+file(GLOB_RECURSE LEETFILES "${CMAKE_SOURCE_DIR}/leetcode/*.c")
+
 # Add the top-level executable
 add_executable(MyCProjects
     main.c
     ${SRC_FILES}
     ${LISTS_FILES}
+    ${LEETFILES}
 )
 
 # Link with the project1 library

@@ -13,6 +13,7 @@
 #include "lib/lecture3.h"
 #include "lib/lecture7.h"
 #include "lib/lecture9.h"
+#include "lib/leetcodetest.h"
 #include "lib/lommeregner.h"
 #include "lib/mergesort.h"
 #include "lib/miniproject1.h"
@@ -21,9 +22,11 @@
 #include "lib/searchCompare.h"
 #include "lib/sqrt.h"
 #include "lib/stensakspapir.h"
+#include "lib/sudoSolver.h"
 #include "miniproject2.h"
 #include "miniproject3.h"
 #include "project1.h"
+
 int main(/*int argc, char *argv[]*/) {
   //--------------------- printingPatterns.c ---------------------
   // int n = 10;
@@ -51,6 +54,11 @@ int main(/*int argc, char *argv[]*/) {
   // EC_hashtableExample();
   //
   // -----------------------------------------------------------------------
+
+  // ------------------------SUDOKU Solver-------------------------------
+
+  // SudokuSolver();
+  // --------------------------------------------------------------------
 
   // --------------------- sqrt.c ---------------------
   // float number = 10;
@@ -146,8 +154,16 @@ int main(/*int argc, char *argv[]*/) {
 
   // --------------------- Mini project3.c --------------------
 
-  miniproject3();
-  //  ---------------------------------------------------------
+  // miniproject3();
+  //   ---------------------------------------------------------
+
+  // ----------------------- LEETCODE --------------------------
+  //
+
+  int number = romanToInt("IVV");
+  printf("%d", number);
+  //
+  // -----------------------------------------------------------
 
   return 0;
 }
