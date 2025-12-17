@@ -9,5 +9,6 @@ int minimumOperations(int *nums, int numsSize);
 int *twoSum(int *nums, int numsSize, int target, int *returnSize);
 int *twoSumV2(int *nums, int numsSize, int target, int *returnSize);
 bool canConstruct(char *ransomNote, char *magazine);
+int lengthOfLongestSubstring(char *s);
 
 #endif
