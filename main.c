@@ -9,16 +9,18 @@
 // #include "lib/hashtable.h"
 #include "lib/lecture1.h"
 #include "lib/lecture12.h"
+#include "lib/lecture13.h"
 #include "lib/lecture2.h"
 #include "lib/lecture3.h"
 #include "lib/lecture7.h"
 #include "lib/lecture9.h"
-#include "lib/leetcodetest.h"
+#include "lib/leetcode.h"
 #include "lib/lommeregner.h"
 #include "lib/mergesort.h"
 #include "lib/miniproject1.h"
 #include "lib/nlognfac.h"
 #include "lib/printingPatterns.h"
+#include "lib/qsort.h"
 #include "lib/searchCompare.h"
 #include "lib/sqrt.h"
 #include "lib/stensakspapir.h"
@@ -26,7 +28,6 @@
 #include "miniproject2.h"
 #include "miniproject3.h"
 #include "project1.h"
-
 int main(/*int argc, char *argv[]*/) {
   //--------------------- printingPatterns.c ---------------------
   // int n = 10;
@@ -75,6 +76,22 @@ int main(/*int argc, char *argv[]*/) {
   // printf("%f\n%f", SQRT , anothersqrt);
   //  --------------------------------------------------
 
+  // --------------------- qsort ---------------------
+  char *colors[] = {"B", "D", "A", "W", "Z", "X", "M", "O"};
+  // Size of the array
+  int size = sizeof(colors) / sizeof(colors[0]);
+
+  qsortingInt();
+  qsortingChar(colors, size);
+  qsortingStr();
+
+  printf("\n===== MyOwnQsort =====\n");
+  test_int_sorting();
+  test_string_sorting();
+  test_char_array_sorting();
+
+  //  --------------------------------------------------
+
   // --------------------- Lecture1.c ---------------------
   // exercise1_1();
   // exercise1_2();
@@ -121,6 +138,11 @@ int main(/*int argc, char *argv[]*/) {
   // exercise13_2(argc, argv);
   // -------------------------------------------------------
 
+  // ---------------------- lecture13 -----------------------
+  //
+  // exercise12_7_and_12_8();
+  // -------------------------------------------------------
+
   // --------------------- StenSaksPapir.c ---------------------
   // stensakspapir_game();
   // -----------------------------------------------------------
@@ -160,10 +182,10 @@ int main(/*int argc, char *argv[]*/) {
   // ----------------------- LEETCODE --------------------------
   //
 
-  int number = romanToInt("IVV");
-  printf("%d", number);
+  // int number = romanToInt("IVV");
+  // printf("%d", number);
   //
-  // -----------------------------------------------------------
+  //  -----------------------------------------------------------
 
   return 0;
 }
