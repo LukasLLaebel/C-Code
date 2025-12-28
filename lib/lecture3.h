@@ -7,6 +7,7 @@
 
 int exercise3_1(void);
 int exercise3_2(void);
+int exercise3_4(void);
 int bouncer(void);
 
 #endif

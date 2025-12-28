@@ -5,6 +5,6 @@
 #ifndef LECTURE2_H
 #define LECTURE2_H
 
-int exsercise2_1();
-
+int exercise2_1();
+int exercise2_5();
 #endif

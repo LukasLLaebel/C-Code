@@ -7,17 +7,18 @@
 // #include "lib/EC_hashtables.h"
 #include "lib/cashier.h"
 // #include "lib/hashtable.h"
+#include "lib/exampleExam.h"
 #include "lib/lecture1.h"
 #include "lib/lecture12.h"
 #include "lib/lecture13.h"
 #include "lib/lecture2.h"
 #include "lib/lecture3.h"
+#include "lib/lecture4.h"
 #include "lib/lecture7.h"
 #include "lib/lecture9.h"
 #include "lib/leetcode.h"
 #include "lib/lommeregner.h"
 #include "lib/mergesort.h"
-#include "lib/miniproject1.h"
 #include "lib/nlognfac.h"
 #include "lib/printingPatterns.h"
 #include "lib/qsort.h"
@@ -25,166 +26,179 @@
 #include "lib/sqrt.h"
 #include "lib/stensakspapir.h"
 #include "lib/sudoSolver.h"
+#include "lib/swapNum.h"
 #include "miniproject2.h"
 #include "miniproject3.h"
 #include "project1.h"
+
+#define LAMBDA(return_type, function_body)                                     \
+  ({                                                                           \
+    return_type __fn__ function_body;                                          \
+    __fn__;                                                                    \
+  })
+
 int main(/*int argc, char *argv[]*/) {
-  //--------------------- printingPatterns.c ---------------------
-  // int n = 10;
-  // int m = 10;
-  // halfPyramid(n);
-  // reverseHalfPyramid(n);
-  // pyramid(n);
-  // diamond(n);
-  // firkant(n, m);
-  // ---------------------------------------------------------------
+  // NOTE: ---------------------EXAM EXAMPLES ----------------------
+  // task8();
+  // printf("%d", f(1)); // first -1 = -1, 1 = 1, 2 = 5
+  // task12();
+  // task13();
+  //  ---------------------------------------------------------------
 
-  // --------------------------- DTG -----------------------------
+  // PERF: --------------------- printingPatterns.c ---------------------
+  //  int n = 10;
+  //  int m = 10;
+  //  halfPyramid(n);
+  //  reverseHalfPyramid(n);
+  //  pyramid(n);
+  //  diamond(n);
+  //  firkant(n, m);
+  //  ---------------------------------------------------------------
 
+  // NOTE: --------------------------- DTG -----------------------------
   // searchCompare();
   // nlogn();
   // factorial();
   // workshop3();
-
   // --------------------------------------------------------------
 
-  // ----------------------------HASH TABLE --------------------------------
-  //
-  //
-  // hashtableExample();
-  // EC_hashtableExample();
-  //
+  // PERF: ----------------------------HASH TABLE
+  // -------------------------------- hashtableExample(); EC_hashtableExample();
   // -----------------------------------------------------------------------
 
-  // ------------------------SUDOKU Solver-------------------------------
-
+  // NOTE: ------------------------SUDOKU Solver-------------------------------
   // SudokuSolver();
   // --------------------------------------------------------------------
 
-  // --------------------- sqrt.c ---------------------
+  // PERF: --------------------- sqrt.c ---------------------
   // float number = 10;
-
   // float SQRT = sqrt(number);
-
   // float inSqrt = inverseSQRT(number);
-
   // float anothersqrt = for_float_sqrt(number);
   // float anothersqrt = binary_search_sqrt(number);
   // float anothersqrt = herons_method(number);
   // float anothersqrt = quake_sqrt(number);
-
   // printf("%f\n%f", SQRT , anothersqrt);
   //  --------------------------------------------------
 
-  // --------------------- qsort ---------------------
-  char *colors[] = {"B", "D", "A", "W", "Z", "X", "M", "O"};
+  // NOTE: --------------------- qsort ---------------------
+  // char *colors[] = {"B", "D", "A", "W", "Z", "X", "M", "O"};
   // Size of the array
-  int size = sizeof(colors) / sizeof(colors[0]);
-
-  qsortingInt();
-  qsortingChar(colors, size);
-  qsortingStr();
-
-  printf("\n===== MyOwnQsort =====\n");
-  test_int_sorting();
-  test_string_sorting();
-  test_char_array_sorting();
-
+  // int size = sizeof(colors) / sizeof(colors[0]);
+  // qsortingInt();
+  // qsortingChar(colors, size);
+  // qsortingStr();
+  // printf("\n===== MyOwnQsort =====\n");
+  // test_int_sorting();
+  // test_string_sorting();
+  // test_char_array_sorting();
   //  --------------------------------------------------
 
-  // --------------------- Lecture1.c ---------------------
-  // exercise1_1();
-  // exercise1_2();
+  // PERF: ---------------- SWAP NUMBERS ----------------------
+  // tempVar();
+  // withoutTemp();
+  // xorSwap();
+  // ----------------------------------------------------
+
+  // NOTE: --------------- LAMBDA FUNCTIONS --------------------
+  //  Create lambda
+  // int (*add)(int, int) = LAMBDA(int, (int a, int b) { return a + b; });
+  // printf("Result: %d\n", add(5, 3));
+  // return 0;
+  //  ------------------------------------------------------
+
+  // PERF: --------------------- Lecture1.c --------------------- INTRODUCTION
+  // TO C exercise1_1(); exercise1_2();
   // ------------------------------------------------------
 
-  // --------------------- Lecture2.c ---------------------
-  // exercise2_1();
+  // NOTE: --------------------- Lecture2.c --------------------- INTRODUKTION
+  // TIL C exercise2_1(); exercise2_5();
   // ------------------------------------------------------
 
-  // --------------------- Lecture3.c ---------------------
+  // PERF: --------------------- Lecture3.c --------------------- KONTROL
+  // STRUKTURER
   // exercise3_1();
   // exercise3_2();
+  // exercise3_4();
   // bouncer();
   // ------------------------------------------------------
 
-  // --------------------- Lecture4.c ---------------------
-
+  // NOTE: <==== Lecture4.c Iterative KONTROLSTRUKTURER ====>
+  // exercise4_1(); unsigned int m = 5, n = -13, k = 3;
+  // exercise4_2(m, n, k);
+  // printf("%d", exercise4_3(n));
+  // exercise4_4();
+  // exercise4_5();
+  // exercise4_5V2();
+  // exercise4_6();
   // ------------------------------------------------------
 
-  // --------------------- Lecture5.c ---------------------
-
+  // PERF: --------------------- Lecture5.c --------------------- FUNCTTIONS
   // ------------------------------------------------------
 
-  // --------------------- Lecture6.c ---------------------
-
+  // NOTE: --------------------- Lecture6.c --------------------- FLERE
+  // FUNCTIONS
   // ------------------------------------------------------
 
-  // --------------------- lecture7 -----------------------
-  // cashier();
-
-  // exercise9_2();
-  // exercise9_3();
+  // PERF:--------------------- lecture7 ----------------------- ARRAYS AND
+  // POINTERS cashier(); exercise9_2(); exercise9_3();
   //  -------------------------------------------------------
 
-  // ---------------------- lecture9 -----------------------
-  // exercise10_1();
-  // exercise10_2();
-  // exercise10_3();
-  // exercise10_4();
+  // NOTE:---------------------- lecture9 ----------------------- TEGN OG TEKST
+  // STRENGE exercise10_1(); exercise10_2(); exercise10_3(); exercise10_4();
   // -------------------------------------------------------
 
-  // ---------------------- lecture12 -----------------------
+  // ------------------------------------------------------------- REKUSION
+  // -------------------------------------------------------------
+  //
+  // -------------------------------------------------------------
+  //
+  // -------------------------------------------------------------
+
+  // PERF: ---------------------- lecture12 -----------------------
   // exercise13_1();
   // exercise13_2(argc, argv);
   // -------------------------------------------------------
 
-  // ---------------------- lecture13 -----------------------
-  //
+  // NOTE:---------------------- lecture13 -----------------------
   // exercise12_7_and_12_8();
   // -------------------------------------------------------
 
-  // --------------------- StenSaksPapir.c ---------------------
+  // PERF: --------------------- StenSaksPapir.c ---------------------
   // stensakspapir_game();
   // -----------------------------------------------------------
 
-  // --------------------- Aflevering1.c ---------------------
+  // NOTE: --------------------- Aflevering1.c ---------------------
   // aflevering1();
   // ---------------------------------------------------------
 
-  // --------------------- Aflevering2.c ---------------------
+  // PERF: --------------------- Aflevering2.c ---------------------
   // int checkNum = 5;
   // int listLength = 100;
   // aflevering2(listLength, checkNum);
   // --------------------------------------------------------
 
-  // ---------------------- Aflevering3 ----------------------
+  // NOTE: ---------------------- Aflevering3 ----------------------
   // Aflevering3();
-
   // ---------------------------------------------------------
 
-  // --------------------- Mini project1.c --------------------
-
+  // PERF: --------------------- Mini project1.c --------------------
   // lommeregner();
   // miniproject1();
   // Main();
   //  ---------------------------------------------------------
 
-  // --------------------- Mini project2.c --------------------
-
+  // NOTE: --------------------- Mini project2.c --------------------
   // miniproject2();
   //  ---------------------------------------------------------
 
-  // --------------------- Mini project3.c --------------------
-
+  // PERF: --------------------- Mini project3.c --------------------
   // miniproject3();
   //   ---------------------------------------------------------
 
-  // ----------------------- LEETCODE --------------------------
-  //
-
+  // NOTE: ----------------------- LEETCODE --------------------------
   // int number = romanToInt("IVV");
   // printf("%d", number);
-  //
   //  -----------------------------------------------------------
 
   return 0;
