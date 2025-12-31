@@ -10,5 +10,5 @@ int *twoSum(int *nums, int numsSize, int target, int *returnSize);
 int *twoSumV2(int *nums, int numsSize, int target, int *returnSize);
 bool canConstruct(char *ransomNote, char *magazine);
 int lengthOfLongestSubstring(char *s);
-
+int maxSubArray(int *nums, int numsSize);
 #endif

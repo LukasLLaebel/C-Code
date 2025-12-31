@@ -62,8 +62,9 @@ int main(/*int argc, char *argv[]*/) {
   // workshop3();
   // --------------------------------------------------------------
 
-  // PERF: ----------------------------HASH TABLE
-  // -------------------------------- hashtableExample(); EC_hashtableExample();
+  // PERF: ----------------------------HASH TABLE ---------------------------
+  // hashtableExample();
+  // EC_hashtableExample();
   // -----------------------------------------------------------------------
 
   // NOTE: ------------------------SUDOKU Solver-------------------------------
@@ -199,6 +200,10 @@ int main(/*int argc, char *argv[]*/) {
   // NOTE: ----------------------- LEETCODE --------------------------
   // int number = romanToInt("IVV");
   // printf("%d", number);
+  // ---Max subarray---
+  int numSize = 9;
+  int nums[] = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
+  printf("%d", maxSubArray(nums, numSize));
   //  -----------------------------------------------------------
 
   return 0;
